@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color: #191970;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    color: white;
+}
+
+#logo{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Madimi One', 'Tahoma';
+    font-size: 3vw;
+}
+
+#menu{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+   
+
+#menu, #content{
+    font-family: 'Roboto';
+}
+
+#menu li{
+    list-style-type: none;
+    display: inline;
+    cursor: pointer;
+    padding: 1%;
+}
+
+#menu li:hover{
+    /*background-color: #00BFFF;*/
+    padding-bottom: 0.4em;
+    border-bottom: 0.3em solid #00bbff;
+    font-weight: bold;
+}
+
+#content{
+    padding-top: 150px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#content p:first-child{
+    text-align: center;
+}
+
+#content img{
+    width: 60%;
+}
+
+#footer{
+    background-color: #191970;
+    width: 100%;
+    height: 50px;
+}
