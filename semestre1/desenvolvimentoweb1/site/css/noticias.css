@@ -1,0 +1,60 @@
+/*sempre colocamos o '*' quando nos referímos à página toda*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+header{
+    background-color: #191970;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    color: #ffffff;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Madimi One', 'Tahoma';
+    padding-top: 20px;
+}
+
+nav{
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'roboto';
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    padding: 1%;
+    cursor: pointer;
+}
+
+/*hover é referente a quando você passa o mouse em cima de um elemento*/
+nav a:hover{
+    padding-bottom: 0.4em;
+    border-bottom: 0.3em solid #00bbff;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #191970;
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer p{
+    color: #ffffff;
+    text-align: center;
+    padding: 17px 0;
+}
