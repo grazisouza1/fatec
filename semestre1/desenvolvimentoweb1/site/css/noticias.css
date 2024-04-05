@@ -44,6 +44,69 @@ nav a:hover{
     font-weight: bold;
 }
 
+main{
+    padding-top: 140px;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*Outra forma de escrever, seria grid-template-columns: repeat(3, 1fr);*/
+}
+
+#manchete{
+    grid-column: 1/4;
+    min-height: 400px;
+    display: flex;
+    padding: 1%;
+    box-shadow: 0 0 0.3em 0.3em rgba(0, 0, 0, 0.1em);
+    border-radius: 0.5em;
+    /*box-shadow.dev*/
+}
+
+.corpo-manchete{
+    width: 38%;
+    padding: 1%;
+}
+
+.corpo-manchete h2{
+    text-align: center;
+    font-size: 2em;
+    line-height: 40px;
+    padding-top: 75px;
+}
+
+.corpo-manchete p{
+    padding: 2%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.corpo-manchete a{
+    text-decoration: none;
+    color: #000;
+}
+
+#manchete img{
+    width: auto;
+}
+
+#noticias{
+    grid-column: 1/4;
+    display:flex;
+    flex-wrap: wrap;
+    padding-bottom: 70px;
+}
+
+article{
+    width: 31.33%;
+    padding: 1%;
+    min-height: 300px;
+}
+
+#noticia1{background-color: #00bbff;}
+#noticia2{background-color: red;}
+#noticia3{background-color: yellow;}
+
 footer{
     background-color: #191970;
     width: 100%;
