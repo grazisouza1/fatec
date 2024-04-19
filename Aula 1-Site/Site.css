@@ -63,7 +63,13 @@ aside{
 .aside-menu li{
   color: aliceblue;
   list-style: none;
-  
+  margin: 16px 0;
+}
+
+.aside-menu li:hover{
+  border: 1px solid white;
+  background-color: #462732;
+  cursor: pointer;
 }
 
 main{
