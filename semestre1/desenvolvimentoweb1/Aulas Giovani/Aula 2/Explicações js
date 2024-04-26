@@ -1,0 +1,20 @@
+/*function soma() {
+    var nome = "gaziella" /*global (fica disponível pro navegador de forma global. Não é recomendado usar quando se trata de informações) 
+    const name = "graziella"
+    let nombre = "graziella"
+  }
+  /*tudo dentro das chaves é parte do escopo da function
+  
+  /* let pode ser alterado/atualizado. Na const, o valor é exclusivo
+  
+  const form = document.querySelector("#contato")
+  /*Forma de "chamar" o formulário para conectar o html com o js
+  
+  const form = document.getElementById("contato")
+  /*Não preciso por o "#", porque o getelement já informa que é um id
+
+  
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); /*Prevent.default retira  padrão de, quando dado submit, a página recarrega.
+    console.log(event);
+  })*/
