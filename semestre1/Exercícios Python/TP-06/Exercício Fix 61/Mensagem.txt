@@ -1,4 +1,0 @@
-Bom dia
-Esse é o texto teste de um exercício
-Aulas do Medina
-Python
