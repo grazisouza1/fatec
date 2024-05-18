@@ -44,5 +44,10 @@ if sexo == "M" or sexo == "m":
     masculino(imc)
 elif sexo == "F" or sexo == "f":
     feminino(imc)
+
+abaixo.close()
+ideal.close()
+acima.close()
+erro.close()
     
 

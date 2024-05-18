@@ -1,0 +1,3 @@
+Hoje é um bom dia para aprender Python
+Bom dia à todos
+O céu é azul
