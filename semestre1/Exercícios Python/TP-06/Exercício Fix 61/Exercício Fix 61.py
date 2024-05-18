@@ -2,11 +2,15 @@ import os
 
 #organização dos arquivos
 diretorio_corrente = os.getcwd()
+caminho_abaixo = r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Abaixo do peso.txt"
+caminho_ideal = r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Peso ideal.txt"
+caminho_acima = r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Acima do peso.txt"
+caminho_erro = r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Erro.txt"
 
-abaixo = open(r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Abaixo do peso.txt", encoding="utf-8")
-ideal = open(r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Peso ideal.txt", encoding="utf-8")
-acima = open(r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Acima do peso.txt", encoding="utf-8")
-erro = open(r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 61\Erro.txt", encoding="utf-8")
+abaixo = open(caminho_abaixo, 'r', encoding="utf-8")
+ideal = open(caminho_ideal, 'r', encoding="utf-8")
+acima = open(caminho_acima, 'r', encoding="utf-8")
+erro = open(caminho_erro, 'r', encoding="utf-8")
 
 abaixor = abaixo.read()
 idealr = ideal.read()
@@ -49,5 +53,3 @@ abaixo.close()
 ideal.close()
 acima.close()
 erro.close()
-    
-

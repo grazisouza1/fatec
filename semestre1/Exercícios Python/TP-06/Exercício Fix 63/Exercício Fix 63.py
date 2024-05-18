@@ -1,8 +1,9 @@
 import os
+from pathlib import Path
 
-diretorrio_corrente = os.getcwd()
+diretorio_corrente = Path.home() / 'Documents' / 'fatec' / 'semestre1' / 'Exercícios Python' / 'TP-06' / 'Exercício Fix 63'  
 
-caminho = r"C:\Users\Juciele\Documents\fatec\semestre1\Exercícios Python\TP-06\Exercício Fix 63\mensagem.txt"
+caminho = diretorio_corrente / 'mensagem.txt'
 
 with open(caminho, 'r', encoding = "utf-8") as mensagem:
     conteudo = mensagem.read()
