@@ -1,31 +1,73 @@
-#main{
+*{
+    font-family: 'Archivo', 'Roboto';
+}
+
+.main{
     width:90%;
     margin: 0 auto;/*top/bottom - 0;left/right - auto*/
 }
+
 h1{
     text-align: center;
+    padding: 10px;
 }
-#dados-contato, #foto{
+.dados-contato{
     float:left;
+    width: 100%;
 }
-#dados-contato{
-    width: 70%;
+
+.linkedin_img{
+    width: 3rem;
+    height: auto;
 }
-#foto{
-    width:30%;
-    text align: right;
+
+.instagram_img{
+    width: 2.4rem;
+    height: auto;
+    margin-bottom: 4px;
 }
-#foto img{
-    width: 150px;
-    height: 150px;
+
+.github_img{
+    width: 2.4rem;
+    height: auto;
+    margin-bottom: 4px;
+    margin-left: 6px;
 }
-#formacaoS{
-    Clear:left;
+
+.foto_perfil{
+    width: 20rem;
+    height: auto;
+    border-radius: 100%;
+    float: right;
+    margin-top: -250px;
+    padding: 20px;
 }
-    #lista{ 
-    color: #0000ff;
+
+.formacao{
+    margin: 5vw;
 }
-.substituto-formação{
-    background-color: #ffff00;
-    padding: 1%;
+
+.experiencias{
+    margin: 5vw;
 }
+
+.informacoes{ 
+    float: right;
+    margin-top: -520px;
+    margin-right: 40px;
+    border: 1.3px solid black;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    padding-top: 1rem;
+}
+
+.lista{
+    align-content: left;
+    margin-bottom: -20px;
+}
+
+li{
+    padding: 6px;
+}
+
+
