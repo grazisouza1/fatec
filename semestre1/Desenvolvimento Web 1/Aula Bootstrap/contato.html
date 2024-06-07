@@ -27,70 +27,61 @@
         </div>
     </nav>
 
-    <div id="resultado"></div>
-
     <div class="container mt-3 mb-3">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page">Home</li>
-        </ol>
-      </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contato</li>
+            </ol>
+        </nav>
 
+        <!--
         <div class="row">
-            <div class="col-md-4 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="card-link">Link do card</a>
-                      <a href="#" class="card-link">Outro link</a>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="col-md-4 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="card-link">Link do card</a>
-                      <a href="#" class="card-link">Outro link</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">Subtitulo do card</h6>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a href="#" class="card-link">Link do card</a>
-                      <a href="#" class="card-link">Outro link</a>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-12 col-sm-12">
+                <form>
+                    <label for="txtemail">E-mail</label>
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Seu email aqui" maxlength="50"/>
+                    <br>
+                    <label for="txtsenha"></label>
+                    <input type="password" name="txtsenha" id="txtsenha" placeholder="Insira sua senha" maxlength="8" minlength="8"/>
+                    <br>
+                    <input type="submit" name="btnenviar" id="btnenviar" value="Enviar"/>
+                </form>
+            </div>   
         </div>
+        -->
 
-        <div class="row">
-            <div class="col-md-8 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VsxlqmSDmBU?si=eoTMt55cVWgOwZiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
+        <form name="frmenviar" id="frmenviar" method="get">
+            <div class="form-group">
+            <label for="txtemail">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="txtemail">
+            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
             </div>
 
-            <div class="col-md-4 col-sm-12 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.3042347373535!2d-47.20515972594266!3d-23.0859562442965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b4b183d3173b%3A0xe4e10e5dd84bd49e!2sFatec!5e0!3m2!1spt-BR!2sbr!4v1716983490201!5m2!1spt-BR!2sbr" width="100%" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
+            <div class="form-group">
+            <label for="txtsenha">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="txtsenha">
             </div>
-        </div>
+
+            <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="sel_uf">UF</label>
+                <select class="form-control form-control-lg" id="sel_uf" name="sel_uf">
+                    <option disabled selected>Escolha um estado</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="btnenviar">Enviar</button>
+            <a href="index.html" title="Voltar" class="btn btn-sucess">Voltar</a>
+        </form>
     </div>
 
     <!-- Footer -->
