@@ -33,3 +33,4 @@ numbers.splice(5, 3) //A partir do índice 5, 3 números serão removidos
 numbers.splice(5, 0, 3, 4) //Como mostrado, queremos remover 0 elementos, então os próximos elementos mostrados serão adicionados
 
 console.log(numbers)
+console.log(averageTemp)
