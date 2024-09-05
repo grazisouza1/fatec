@@ -5,12 +5,12 @@ const uniao = a.concat(b)
 console.log(`Vetor antes da classificação: ${uniao}`)
 
 function classificar(){
-    for (i = 1; i < uniao.length; i++){
-        for (j = i + 1; j < uniao.length; j++){
-            if (uniao[i] > uniao[j]){
-                temp = uniao[i]
+    for (i = 0; i < uniao.length; i++){
+        for (j = 0; j < uniao.length; j++){
+            if (uniao[i] < uniao[j]){
+                let temp = uniao[i]
                 uniao[i] = uniao[j]
-                uniao[j] = uniao[i]
+                uniao[j] = temp
             } 
         }
     }
