@@ -60,3 +60,65 @@ console.log(queue.isEmpty())
 queue.dequeue() //Remove John
 queue.dequeue() //Remove Jack
 console.log(queue.toString())
+
+/* class Queue {
+    constructor(){
+        this.queue = []
+    }
+    enqueue(element){
+        this.queue.push(element)
+    }
+    dequeue(){
+        return this.queue.shift()
+    }
+    size(){
+        return this.queue.length
+    }
+    peek(){
+        return this.queue[0]
+    }
+    isEmpty(){
+        return this.queue.length === 0
+    }
+}
+
+class Stack {
+    constructor(){
+        this.stack = []
+    }
+    push(element){
+        this.stack.push(element)
+    }
+    pop(){
+        return this.stack.pop()
+    }
+    size(){
+        return this.stack.length
+    }
+    isEmpty(){
+        return this.stack.length === 0
+    }
+    clear(){
+        this.stack = []
+    }
+}
+
+function inverter(){
+    const stack = new Stack
+    const queue = new Queue
+
+    queue.enqueue(1)
+    queue.enqueue(2)
+    queue.enqueue(3)
+
+    while (!queue.isEmpty()){
+        stack.push(queue.dequeue())
+    }
+    while(!stack.isEmpty()){
+        queue.enqueue(stack.pop())
+    }
+    
+    return queue
+}
+
+console.log(inverter()) */
