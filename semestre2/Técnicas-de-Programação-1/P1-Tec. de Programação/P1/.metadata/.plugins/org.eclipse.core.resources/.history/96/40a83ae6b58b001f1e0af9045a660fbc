@@ -1,0 +1,26 @@
+package questao1;
+
+public class Pessoa {
+    private String nome;
+    private float altura;
+    private float peso;
+
+    public float calculeIMC(float altura, float peso) {
+        return peso / (altura * altura);
+    }
+
+    public static void main(String[] args) {
+        Pessoa pessoa = new Pessoa();
+        pessoa.nome = "João";
+        pessoa.altura = 1.70f;
+        pessoa.peso = 67f;
+
+        float imc = pessoa.calculeIMC(pessoa.altura, pessoa.peso);
+        System.out.println("O IMC é de: " + imc);
+        if (imc > 24.99) {
+            System.out.println("Você está com sobrepeso!");
+        } else {
+            System.out.println("Você não está com sobrepeso");
+        }
+    }
+}

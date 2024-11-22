@@ -1,0 +1,14 @@
+package questao1;
+
+public class pessoa {
+	public static void main(String[] args) {
+	private string nome;
+	private float altura;
+	private float peso;
+	
+	public int calculeIMC(a, p) {
+		return p / (a ^2);
+	}
+	
+	System.out.println("ABC");
+}

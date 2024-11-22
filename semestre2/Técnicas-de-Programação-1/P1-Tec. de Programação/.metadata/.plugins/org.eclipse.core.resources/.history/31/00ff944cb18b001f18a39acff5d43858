@@ -1,0 +1,15 @@
+package questao1;
+
+import java.util.Scanner;
+Scanner scanner = new;
+Scanner(System.in);
+
+public class pessoa {
+	private string nome;
+	private float altura;
+	private float peso;
+	
+	public int CalculeIMC(a, p) {
+		return 
+	}
+}
