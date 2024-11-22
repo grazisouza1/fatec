@@ -1,7 +1,0 @@
-package Segundo;
-
-public class Autor {
-	String nome;
-	String email;
-	String cpf;
-}
