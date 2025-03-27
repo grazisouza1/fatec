@@ -1,12 +1,12 @@
-import { Product } from 'src/products/entities/product.entity';
 import {
-  Entity,
-  PrimaryGeneratedColumn,
   Column,
-  ManyToOne,
+  Entity,
   JoinColumn,
+  ManyToOne,
+  PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Order } from './order.entity';
+import { Product } from 'src/products/entities/product.entity';
 
 @Entity()
 export class OrderItem {
@@ -23,16 +23,16 @@ export class OrderItem {
   total: number;
 
   @Column()
-  orderId: number;
+  productId: number;
 
   @Column()
-  productId: number;
+  orderId: number;
 
   @ManyToOne(() => Order, (order) => order.items)
   @JoinColumn({ name: 'orderId' })
   order: Order;
 
-  @ManyToOne(() => Product, (product) => product.items)
+  @ManyToOne(() => Product, (produto) => Product.items)
   @JoinColumn({ name: 'productId' })
   product: Product;
 }

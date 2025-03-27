@@ -26,4 +26,7 @@ export class Order {
   @ManyToOne(() => User, (user) => user.orders)
   @JoinColumn({ name: 'userId' })
   user: User;
+
+  @OneToMany(() => OrderItem, (item) => item.order)
+  item: OrderItem[];
 }
