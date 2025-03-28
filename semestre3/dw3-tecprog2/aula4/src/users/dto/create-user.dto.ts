@@ -6,4 +6,7 @@ export class CreateUserDto {
 
   @IsEmail({}, { message: 'Email Inválido' })
   email: string;
+
+  @IsNotEmpty({ message: 'Senha é obrigatória' })
+  password: string;
 }
