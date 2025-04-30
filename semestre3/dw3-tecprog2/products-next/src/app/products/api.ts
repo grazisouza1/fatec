@@ -18,5 +18,15 @@ export async function createProduct(data: IProductRequest) {
     body: JSON.stringify(data),
   });
 
-  console.log(response);
+  if (response.status == 201) {
+    alert("Produto Cadastrado");
+  }
+}
+
+export async function getOneProductById(id: string): Promise<IProduct | null> {
+  const response = await fetch(`${apiUrl}/${id}`);
+  if (response.status != 200) return null;
+  const json = await response.json();
+
+  return json;
 }

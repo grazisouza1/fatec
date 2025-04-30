@@ -1,13 +1,11 @@
 export interface IUser {
-    id: number
-    name: string
-    username: string
-    email: string
-    adress: IAdress
-  }
+  id: number;
+  name: string;
+  email: string;
+}
 
-  export interface IAdress {
-    street: string
-    city: string
-    zipcode: string
-  }
+export interface IUserRequest {
+  name: string;
+  email: string;
+  password: string;
+}
